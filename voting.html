@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Election Voting</title>
+  <link rel="stylesheet" href="voting.css">
+</head>
+<body>
+  <div class="container">
+    <h1>School Election Voting System</h1>
+    
+    <!-- Voting Section -->
+    <div id="votingSection">
+      <div class="candidates">
+        <h2>Available Candidates:</h2>
+        <div class="candidate">
+          <input type="radio" id="candidate1-vote" name="candidate" value="Alice">
+          <label for="candidate1-vote">Alice</label>
+        </div>
+        <div class="candidate">
+          <input type="radio" id="candidate2-vote" name="candidate" value="Bob">
+          <label for="candidate2-vote">Bob</label>
+        </div>
+        <div class="candidate">
+          <input type="radio" id="candidate3-vote" name="candidate" value="Charlie">
+          <label for="candidate3-vote">Charlie</label>
+        </div>
+        <div class="candidate">
+          <input type="radio" id="candidate4-vote" name="candidate" value="David">
+          <label for="candidate4-vote">David</label>
+        </div>
+      </div>
+      <button id="voteButton">Cast Vote</button>
+    </div>
+    
+    <!-- Admin Login Form (initially hidden) -->
+    <div id="loginSection" style="display:none;">
+      <h2>Admin Login</h2>
+      <input type="password" id="adminPassword" placeholder="Enter Admin Password" />
+      <button id="loginButton">Login</button>
+    </div>
+    
+    <!-- Results Section (initially hidden) -->
+    <div id="results" class="results" style="display: none;">
+      <h3>Election Results (Admin View):</h3>
+      <p>Alice: <span id="aliceVotes">0</span> votes</p>
+      <p>Bob: <span id="bobVotes">0</span> votes</p>
+      <p>Charlie: <span id="charlieVotes">0</span> votes</p>
+      <p>David: <span id="davidVotes">0</span> votes</p>
+    </div>
+  </div>
+
+  <script src="voting.js"></script>
+</body>
+</html>
